@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/botstore_api
+    username: root
+    password: 1024
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: botstore_api
+
+server:
+  port: 8080
+
+linh:
+  app:
+    jwtSecret: ======================llu1ts===========================
+    jwtExpirationMs: 86400000
+    jwtRefreshExpirationMs: 604800000
